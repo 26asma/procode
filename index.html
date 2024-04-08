@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9fdb3dd115.js" crossorigin="anonymous"></script>
+
+    <title>Registration</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background: url("img.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .wrapper {
+            
+            justify-content: center;
+            align-items: center;
+            min-height: 110vh;
+            background: #9e649457
+        }
+
+
+        .form-box {
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            width: 512px;
+            height: 420px;
+            /* margin-top: -100px; */
+            /* border: 1px solid #fff;  */
+
+        }
+ 
+        .register-container {
+            position: absolute;
+            left: 4px;
+            width: 500px;
+            padding-top: 25%;
+            margin-left: 60%;
+            transition: .5s ease-in-out;
+        }
+.top span{
+    color: #fff;
+     font-size: small;
+    padding: 10px 150px;
+    
+    justify-content: center; 
+    margin-left: 5px;
+}
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+
+}
+
+.input-field{
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+::-webkit-input-placeholder{
+    color: #fff;
+
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+
+}
+.two-col {
+            display: inline;
+            justify-content: space-between;
+            color: #fff;
+            font-size: small;
+            margin-top: 10px;
+
+        }
+
+        .two-col .one {
+            display: inline-block;
+            gap: 5px;
+        }
+
+        .two label a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .two label a:hover {
+            text-decoration: underline;
+
+        }
+
+        .one {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .two {
+            text-align: right;
+            margin-top: -12px;
+        }
+
+     
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-box">
+            <!-- --------------------reg form---------------------------------- -->
+            <div class="register-container" id="register">
+                <div class="top">
+                    <span>Have an Account? <a href=loginpage.html>Login</a></span>
+                    <header>Sign Up</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Firstname">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Lastname">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Register">
+
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check"> Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Terms & conditions</a>
+
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
